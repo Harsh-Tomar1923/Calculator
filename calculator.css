@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border: 1px solid black;
+    height: 500px;
+    width: 350px;
+    margin: 20px auto;
+    /* text-align: center; */
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 10px gray;
+}
+#screen{
+    display: block;
+    font-size: 2.0rem;
+    text-align: right;
+    margin: 5px auto;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 40px;
+    width: 82%;
+}
+h1{
+    text-align: center;
+    /* color: white; */
+}
+#screen:focus{
+    outline: none;
+}
+td{
+    height: 60px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 10%;
+    /* box-shadow: 2px 2px 2px gray; */
+    transition: 100ms;
+}
+td:active{
+    scale: 0.8;
+    background-color: rgb(173, 243, 243);
+}
+table{
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 12px;
+    /* box-shadow: 2px 2px 2px gray; */
+    
+}
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+body::before{
+    background-image: url('https://media.istockphoto.com/id/1148634836/photo/accounting-blue-background-3d-illustration.jpg?s=2048x2048&w=is&k=20&c=SEnol6MkPvDPoE8fx5Xcw-wgMMnzolAdk-Pbrz6J6E8=');
+    opacity: 0.6;
+    content: "";
+    z-index: -1;
+    
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -20px;
+}
+
+@media only screen and (max-width: 380px) {
+    .container{
+        border: 1px solid black;
+        height: 400px;
+        width: 250px;
+        margin: 20px auto;
+        /* text-align: center; */
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 10px 10px 10px gray;
+    }
+
+    td{
+        height: 50px;
+        width: 40px;
+        border: 1px solid black;
+        border-radius: 10%;
+        /* box-shadow: 2px 2px 2px gray; */
+        transition: 100ms;
+    }
+
+    table{
+        border-spacing: 3px;
+    }
+    #screen{
+        display: block;
+        font-size: 1.5rem;
+        text-align: right;
+        margin: 5px auto;
+        background-color: transparent;
+        border: 1px solid black;
+        height: 30px;
+        width: 82%;
+    }
+  }
